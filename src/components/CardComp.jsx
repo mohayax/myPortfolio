@@ -1,31 +1,32 @@
 import React from 'react'
-import calc from '../assests/calculator.jpg';
+import calculator from '../assests/calculator.jpg';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './NavigationBar.css'
 
+
 const CardComp = () => {
 const cardsObj = [
         {
-            img: {calc},
+            img: {calculator},
             title: 'Calculator App',
             desc: "A simple calculator app created using HTML, CSS and Javascript"
         },
     
         {
-        img: {calc},
+        img: {calculator},
         title: 'Calculator App',
         desc: "A simple calculator app created using HTML, CSS and Javascript"
         },
         
         {
-        img: {calc},
+        img: {calculator},
         title: 'Calculator App',
         desc: "A simple calculator app created using HTML, CSS and Javascript"
         },
 
         {
-        img: {calc},
+        img: {calculator},
         title: 'Calculator App',
         desc: "A simple calculator app created using HTML, CSS and Javascript"
         }
@@ -33,7 +34,7 @@ const cardsObj = [
     ]
 
     const content = cardsObj.map((element) => (
-        <Card style={{ width: '18rem' }} key={element.title}>
+        <Card style={{ width: '33.15rem' }} key={element.title} className="me-3 mb-3">
             <Card.Img variant="top" src={element.img} />
             <Card.Body>
                 <Card.Title>{element.title}</Card.Title>
@@ -43,6 +44,7 @@ const cardsObj = [
                 <Button variant="primary">Go somewhere</Button>
             </Card.Body>
         </Card>
+        
     ))
   return ( 
     <div className='card-box'>
