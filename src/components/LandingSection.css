@@ -1,0 +1,36 @@
+.landing-container{
+    height: 100vh;
+    background-color: #2a4365;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dp{
+    width: 180px;
+    height: 190px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.greet{
+    margin-top: 4px;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+}
+
+.stack{
+    font-weight: 400;
+    margin-top: 15px;
+    font-size: 60px;
+    color: white;
+}
+
+.sp{
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    line-height: 15px;
+}
