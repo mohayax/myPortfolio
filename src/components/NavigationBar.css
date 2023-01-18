@@ -6,3 +6,11 @@
     font-size: 25px;
     color: white;
 }
+
+.card-box{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
