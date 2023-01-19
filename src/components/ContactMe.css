@@ -1,8 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .form{
     background-color: #512DA7;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
     
 }
 

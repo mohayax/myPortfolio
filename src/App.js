@@ -4,6 +4,7 @@ import NavigationBar from "./components/NavigationBar";
 import LandingSection from './components/LandingSection';
 import ProjectSection from './components/ProjectSection'
 import ContactMe from './components/ContactMe';
+import Loader from './components/Loader';
 
 
 function App() {
@@ -12,12 +13,12 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000)
+    }, 3000)
   }, []);
   
   return (
    <div>
-    {loading ? <ContactMe /> : 
+    {loading ? <Loader /> : 
     
       <div>
           <NavigationBar />

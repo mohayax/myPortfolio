@@ -1,10 +1,11 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+html {
+    scroll-behavior: smooth;
 }
+
 
 #projects{
     background-color: #15532D;
+    height: 100vh;
 }
 
 .project-margin{
