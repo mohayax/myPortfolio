@@ -25,22 +25,22 @@ function NavigationBar  () {
               <FaEnvelope className='icon' />
             </Nav.Link>
 
-            <Nav.Link href="https://github.com/mohayax" target="blank">
+            <Nav.Link href="https://github.com/mohayax" target="_blank">
               <FaGithub className='icon'/>
             </Nav.Link>
            
-            <Nav.Link href="#action2">
+            <Nav.Link href="https://www.linkedin.com/in/muhammad-yakubu-19671623a/" target="_blank">
               <FaLinkedin className='icon'/>
             </Nav.Link>
           
-            <Nav.Link href="#action2">
+            <Nav.Link href="https://twitter.com/mohayax88" target="_blank">
               <FaTwitter className='icon' />
             </Nav.Link>
           </Nav>
         <div className="d-flex">
-          <Nav.Link href="#projects" style={{color:"white"}} className="me-4">Projects</Nav.Link>
+            <Nav.Link href="#projects"  className="me-4" id='nav-link'>Projects</Nav.Link>
           
-          <Nav.Link href="#contact" style={{ color: "white" }} className="me-4">Contact Me</Nav.Link>
+            <Nav.Link href="#contact" className="me-4 nav-link" id='nav-link'>Contact Me</Nav.Link>
         </div>
             
         </Navbar.Collapse>

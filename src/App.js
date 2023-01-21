@@ -5,6 +5,7 @@ import LandingSection from './components/LandingSection';
 import ProjectSection from './components/ProjectSection'
 import ContactMe from './components/ContactMe';
 import Loader from './components/Loader';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000)
+    }, 1700)
   }, []);
   
   return (
@@ -25,6 +26,7 @@ function App() {
           <LandingSection />
           <ProjectSection />
           <ContactMe />
+          <Footer />
       </div>
     
   }

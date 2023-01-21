@@ -7,6 +7,18 @@
     color: white;
 }
 
+.icon:hover{
+    color: lightblue;
+}
+
+#nav-link:hover{
+    color: lightblue;
+}
+
+#nav-link{
+    color: white;
+}
+
 .card-box{
     width: 80vw;
     display: flex;
@@ -14,8 +26,51 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.card{
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px,
+            rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px,
+            rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 21.5rem;
+}
+
+.footer{
+    height: 60px;
+    background-color: #212529;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.li{
+   list-style: none;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+@media (max-width:477px){
+    .card-box{
+        width: 100%;
+    }
+
+    .card{
+        width: 90%;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
+
+@media (max-width:840px){
+    .card {
+            width: 310px;}
 }

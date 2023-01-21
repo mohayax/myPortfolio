@@ -16,6 +16,11 @@ html {
     height: 190px;
     border-radius: 50%;
     border: 2px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px,
+            rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px,
+            rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .greet{
@@ -23,6 +28,11 @@ html {
     font-style: italic;
     font-size: 15px;
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px,
+            rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px,
+            rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .stack{
@@ -37,4 +47,31 @@ html {
     font-size: 60px;
     color: white;
     line-height: 15px;
+}
+
+@media (max-width:477px){
+
+    .stack, .sp{
+        font-size: 30px;
+    }
+        .landing-container{
+            height: 60vh;
+        }
+                .dp {
+                    width: 130px;
+                    height: 140px;}
+}
+
+
+@media (max-width:840px) {
+    .stack,
+        .sp {
+            font-size: 50px;
+        }
+    
+        .landing-container {
+            height: 80vh;
+        }
+    
+
 }

@@ -1,19 +1,24 @@
 import React from 'react'
-import { useField } from 'formik'
+import {ErrorMessage, useField } from 'formik'
 import './ContactMe.css'
 const Inputfield = ({label, ...props}) => {
     const [field, meta] = useField(props)
   return (
     <div className='mb-2'>
-        <label htmlFor={field.name}>{label}</label>
+        <label htmlFor={field.name} style={{color: 'white'}}>{label}</label>
         <input
-        className='form-control shadow-none'
+        style={{ color: 'white' }}
+        className={`form-control shadow-none  ${meta.touched && meta.error && 'invalid'}`}
         id='field'
         {...field} {...props}
         autoComplete="off"
         />
+        <ErrorMessage component="div" name={field.name} className="error"/>
     </div>
   )
 }
+
+
+
 
 export default Inputfield

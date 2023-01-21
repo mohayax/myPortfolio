@@ -13,11 +13,73 @@ html{
 
 .form-element{
     margin-left: auto;
-        margin-right: auto;
-        width: 80vw;
+    margin-right: auto;
+    width: 80vw;
 }
 
 #field{
     background: transparent;
-    border: 1px solid white;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, white, darkorchid) 1;
+
+}
+.field {
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, white, darkorchid) 1;
+
+}
+.error{
+    position: absolute;
+    color: red;
+    font-size: .6rem;
+}
+
+.invalid{
+    border: 1px solid red !important;
+    background: transparent;
+    
+}
+
+.form-data{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    border-radius: 5px;
+    padding: 15px 10px 15px 10px;
+}
+
+
+.modal-content {
+    background: #81C784 !important;;
+}
+
+@media (max-width:477px) {
+    .msg{
+        display: none;
+    }
+
+    .form{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: 80vh;
+    }
+}
+
+@media (max-width:840px) {
+    .msg {
+            width: 300px;
+        }
+
+                .form {
+                    width: au;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    height: 80vh;
+                }
 }
